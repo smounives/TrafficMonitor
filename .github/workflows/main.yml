@@ -1,5 +1,7 @@
 name: Release CI
 on: push
+  watch:
+    types: [started]
 jobs:
   x64_build:
     runs-on: windows-latest
